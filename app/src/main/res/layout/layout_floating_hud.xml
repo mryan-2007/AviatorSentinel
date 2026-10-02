@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#DD111827"
+    android:padding="8dp"
+    android:elevation="8dp">
+
+    <ImageView
+        android:id="@+id/btnMinimize"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        android:tint="#00E676"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="6dp" />
+
+    <LinearLayout
+        android:id="@+id/hudContentContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStreakBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔥 Streak: 0 / 7"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready to Crop"
+            android:textColor="#9CA3AF"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <Button
+                android:id="@+id/btnCrop"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Crop"
+                android:textSize="12sp"
+                android:backgroundTint="#374151"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnToggleStart"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Start"
+                android:textSize="12sp"
+                android:backgroundTint="#00E676"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
